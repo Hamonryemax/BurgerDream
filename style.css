@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*общие стили */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+p + p {
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    width: 165px;
+    height: 50px;
+
+    background-color: #F6762C;
+    border-radius: 5px;
+
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/*шапка*/
+
+.header {
+    padding: 25px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__link {
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.header__link--active {
+    opacity: 1;
+}
+
+.header__link:hover {
+    opacity: 0.9;
+}
+
+.main {
+}
+
+/*Приветственная секция*/
+
+.welcome {
+    box-sizing: border-box;
+    min-height: 100vh;
+
+    margin: -100px;
+    padding: 240px 0;
+
+    background-image: url("./images/welcome-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__text {
+    width: 550px;
+}
+
+.welcome__subtitle {
+    margin-bottom: 7px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.welcome__title {
+    font-size: 58px;
+
+}
+
+.welcome__desc {
+    margin: 40px 0;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/*Список еды*/
+.food-list {
+    padding: 200px 0;
+}
+
+.container__food-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px 10px;
+
+}
+
+.food-list__card {
+    width: 260px;
+
+    overflow: hidden;
+    text-align: center;
+
+    background-color: #312F30;
+    border-radius: 10px;
+}
+
+.food-list__img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.food-list__text-wrapper {
+    padding: 30px 20px;
+}
+
+.food-list__title {
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+.food-list__desc {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+/*Секция order*/
+.order {
+    background-color: #312F30;
+    padding: 60px 0;
+}
+
+.container {
+}
+
+.order__img {
+}
+
+.order__text {
+}
+
+.order__title {
+    margin-bottom: 25px;
+    font-size: 44px;
+}
+
+.order__desc {
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.order__price {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #F6762C;
+}
+
+.order__price--old {
+    font-size: 16px;
+    text-decoration-line: line-through;
+    opacity: 0.5;
+}
+
+.order__price + .order__price {
+    margin-left: 3px;
+}
+
+.order__btn {
+    margin-top: 10px;
+}
