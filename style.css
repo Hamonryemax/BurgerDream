@@ -327,12 +327,9 @@ img {
     max-width: 888px;
 }
 
-.feedback_img {
-}
-
 .feedback__text {
     margin: 0;
-    width: 370px;
+    max-width: 370px;
     text-align: center;
 
     display: flex;
@@ -369,6 +366,7 @@ img {
 .download .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .download__title {
@@ -437,21 +435,9 @@ img {
     content: url(./images/icons/global.svg);
 }
 
-.footer__nav {
-}
-
 .footer__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.footer__menu {
-}
-
-.footer__list-title {
-}
-
-.footer__inner-list {
 }
 
 .footer__list-item + .footer__list-item {
@@ -466,10 +452,103 @@ img {
     display: flex;
 }
 
-.footer__socials-link {
-}
-
 .footer__socials-link + .footer__socials-link {
     margin-left: 8px;
 }
 
+
+@media (max-width: 1100px) {
+    .welcome__desc {
+        opacity: 1;
+    }
+}
+@media (max-width: 950px) {
+    .order__container {
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .order__text {
+        text-align: center;
+    }
+
+    .order .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 850px) {
+    .container__food-list {
+        justify-content: space-evenly;
+    }
+
+    .feedback {
+        padding-bottom: 100px;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "nav nav"
+                            "contacts socials";
+        justify-items: center;
+        gap: 40px 150px;
+    }
+
+    .footer__contacts {
+        grid-area: contacts;
+        justify-self: end;
+    }
+
+    .footer__nav {
+        grid-area: nav;
+    }
+
+    .footer__socials-wrapper {
+        grid-area: socials;
+        align-self: center;
+        justify-self: start;
+    }
+
+    .footer__list {
+        gap: 80px;
+    }
+}
+@media (max-width: 650px) {
+    .header .btn {
+        display: none;
+    }
+
+    .welcome {
+        padding: 150px 0 100px 0;
+        min-height: auto;
+    }
+
+    .welcome__text {
+        width: 100%;
+    }
+
+    .welcome__title {
+        font-size: 40px;
+    }
+
+    .welcome__desc {
+        margin: 20px 0;
+    }
+
+    .product {
+        padding: 60px 0 100px 0;
+    }
+
+    .feedback_img {
+        width: 200px;
+    }
+
+    .download__title {
+        font-size: 30px;
+    }
+}
