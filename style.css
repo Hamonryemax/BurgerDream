@@ -465,7 +465,7 @@ img {
 @media (max-width: 950px) {
     .order__container {
         flex-direction: column;
-        padding-right: 0;
+        padding-right: 15px;
     }
 
     .order__text {
@@ -544,11 +544,125 @@ img {
         padding: 60px 0 100px 0;
     }
 
+    .product__card {
+        width: 100%;
+        padding-left: 50%;
+    }
+
+    .product__card:nth-child(even) {
+        padding-right: 50%;
+    }
+
     .feedback_img {
         width: 200px;
     }
 
     .download__title {
+        font-size: 24px;
+    }
+}
+@media (max-width: 500px) {
+    .header__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__list {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .welcome {
+        margin-top: -240px;
+        padding-top: 280px;
+    }
+
+    .welcome__title {
         font-size: 30px;
+    }
+
+    .welcome__desc {
+        font-size: 12px;
+    }
+
+    .food-list, .order {
+        padding: 60px 0;
+    }
+
+    .order__title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .order__img {
+        width: 100%;
+    }
+
+    .product__card {
+        position: relative;
+    }
+
+    .product__card > * {
+        position: relative;
+        z-index: 10;
+    }
+
+    .product__card::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .product__desc {
+        opacity: 1;
+    }
+
+    .feedback {
+        padding-bottom: 60px;
+    }
+
+    .feedback__author {
+        font-size: 18px;
+    }
+
+    .feedback .container {
+        flex-direction: column;
+    }
+
+    .download .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__contacts {
+        align-items: center;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__list-item + .footer__list-item {
+        margin-top: 10px;
     }
 }
